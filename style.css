@@ -165,15 +165,16 @@ body{
 
 @media screen and (min-width: 1000px){
     body{
-        width: 1140px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border: 1px solid red;
         height: 95vh;
     }   
     .main-container{
         display: grid;
+        width: 1200px;
+        margin: 0 auto;
         grid-template-columns: repeat(4, auto);
         height: 50em;
         gap: 0em;
