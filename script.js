@@ -10,7 +10,6 @@ function timelineSelection(e){
     e.target.classList.add("selected");
 
     var selectedTimeline = e.target.textContent.toLowerCase();
-    console.log(selectedTimeline);
 
     //hide all timelines then show selected one
     document.querySelectorAll(".daily, .weekly, .monthly")
