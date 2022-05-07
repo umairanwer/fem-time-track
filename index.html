@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+  <header class="profile-card">
+    <div class="user-details">
+      <img src="images/image-jeremy.png" alt="display-photo" class="display-photo">
+      <div class="profile-name">
+        <p>Report for</p>
+        <h1 id="display-name">Jeremy Robson</h1>
+      </div>
+    </div>
+    <div class="time-selector">
+      <p id="daily-selector" class="t-selector selected">Daily</p>
+      <p id="weekly-selector" class="t-selector">Weekly</p>
+      <p id="monhtly-selector" class="t-selector">Monthly</p>
+    </div>
+  </header>
+
+  <section class="time-card work-card">
+    <img src="images/icon-work.svg" alt="work-icon" class="card-bg-img">
+    <div class="foreground">
+      <h1 class="task-name">Work</h1>
+      <div class="time-container">
+        <p class="time-hours daily">5hrs</p> <!-- daily -->
+        <p class="last-time-hours daily previous">Last Day - 7hrs</p> <!-- daily -->
+        <p class="time-hours weekly">32hrs</p> <!-- weekly -->
+        <p class="last-time-hours weekly previous">Previous - 36hrs</p> <!-- weekly -->
+        <p class="time-hours monthly">103hrs</p> <!-- monthly -->
+        <p class="last-time-hours monthly previous">Previous - 128hrs</p><!-- monthly -->
+      </div>
+    </div>
+  </section>
+
+  <section class="time-card play-card">
+    <img src="images/icon-play.svg" alt="work-icon" class="card-bg-img">
+    <div class="foreground">
+      <h1 class="task-name">Play</h1>
+      <div class="time-container">
+        <p class="time-hours daily">1hrs</p> <!-- daily -->
+        <p class="last-time-hours daily previous">Last Day - 2hrs</p> <!-- daily -->
+        <p class="time-hours weekly">10hrs</p> <!-- weekly -->
+        <p class="last-time-hours weekly previous">Previous - 8hrs</p> <!-- weekly -->
+        <p class="time-hours monthly">23hrs</p> <!-- monthly -->
+        <p class="last-time-hours monthly previous">Previous - 29hrs</p><!-- monthly -->
+      </div>
+    </div>
+  </section>
+
+  <section class="time-card study-card">
+    <img src="images/icon-study.svg" alt="work-icon" class="card-bg-img">
+    <div class="foreground">
+      <h1 class="task-name">Study</h1>
+      <div class="time-container">
+        <p class="time-hours daily">0hrs</p> <!-- daily -->
+        <p class="last-time-hours daily previous">Last Day - 1hrs</p> <!-- daily -->
+        <p class="time-hours weekly">4hrs</p> <!-- weekly -->
+        <p class="last-time-hours weekly previous">Previous - 7hrs</p> <!-- weekly -->
+        <p class="time-hours monthly">13hrs</p> <!-- monthly -->
+        <p class="last-time-hours monthly previous">Previous - 19hrs</p><!-- monthly -->
+      </div>
+    </div>
+  </section>
+
+  <section class="time-card exercise-card">
+    <img src="images/icon-exercise.svg" alt="exercise-icon" class="card-bg-img">
+    <div class="foreground">
+      <h1 class="task-name">Exercise</h1>
+      <div class="time-container">
+        <p class="time-hours daily">1hrs</p> <!-- daily -->
+        <p class="last-time-hours daily previous">Last Day - 1hrs</p> <!-- daily -->
+        <p class="time-hours weekly">4hrs</p> <!-- weekly -->
+        <p class="last-time-hours weekly previous">Previous - 5hrs</p> <!-- weekly -->
+        <p class="time-hours monthly">11hrs</p> <!-- monthly -->
+        <p class="last-time-hours monthly previous">Previous - 18hrs</p><!-- monthly -->
+      </div>
+    </div>
+  </section>
+  
+  <section class="time-card social-card">
+    <img src="images/icon-social.svg" alt="social-icon" class="card-bg-img">
+    <div class="foreground">
+      <h1 class="task-name">Social</h1>
+      <div class="time-container">
+        <p class="time-hours daily">1hrs</p> <!-- daily -->
+        <p class="last-time-hours daily previous">Last Day - 3hrs</p> <!-- daily -->
+        <p class="time-hours weekly">5hrs</p> <!-- weekly -->
+        <p class="last-time-hours weekly previous">Previous - 10hrs</p> <!-- weekly -->
+        <p class="time-hours monthly">21hrs</p> <!-- monthly -->
+        <p class="last-time-hours monthly previous">Previous - 23hrs</p><!-- monthly -->
+      </div>
+  </section> 
+  
+  <section class="time-card self-care-card">
+    <img src="images/icon-self-care.svg" alt="self-care-icon" class="card-bg-img">
+    <div class="foreground">
+      <h1 class="task-name">Self Care</h1>
+      <div class="time-container">
+        <p class="time-hours daily">0hrs</p> <!-- daily -->
+        <p class="last-time-hours daily previous">Last Day - 1hrs</p> <!-- daily -->
+        <p class="time-hours weekly">2hrs</p> <!-- weekly -->
+        <p class="last-time-hours weekly previous">Previous - 2hrs</p> <!-- weekly -->
+        <p class="time-hours monthly">7hrs</p> <!-- monthly -->
+        <p class="last-time-hours monthly previous">Previous - 11hrs</p><!-- monthly -->
+      </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Umair</a>.
+  </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
